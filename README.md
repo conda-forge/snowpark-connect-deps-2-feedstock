@@ -13,10 +13,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27183&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/snowpark-connect-deps-2-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/snowpark-connect-deps-2-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/snowpark-connect-deps-2-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -39,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `snowpark-connect-deps-2` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install snowpark-connect-deps-2
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install snowpark-connect-deps-2
 ```
 
-It is possible to list all of the versions of `snowpark-connect-deps-2` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add snowpark-connect-deps-2
+# for installing globally
+pixi global install snowpark-connect-deps-2
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `snowpark-connect-deps-2` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search snowpark-connect-deps-2 --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search snowpark-connect-deps-2 --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search snowpark-connect-deps-2 --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -75,6 +118,8 @@ mamba repoquery whoneeds snowpark-connect-deps-2 --channel conda-forge
 # List dependencies of `snowpark-connect-deps-2`:
 mamba repoquery depends snowpark-connect-deps-2 --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -147,6 +192,7 @@ Feedstock Maintainers
 * [@sfc-gh-ckonigsmark](https://github.com/sfc-gh-ckonigsmark/)
 * [@sfc-gh-igarish](https://github.com/sfc-gh-igarish/)
 * [@sfc-gh-kgadomski](https://github.com/sfc-gh-kgadomski/)
+* [@sfc-gh-manowotka](https://github.com/sfc-gh-manowotka/)
 * [@sfc-gh-pwojcik](https://github.com/sfc-gh-pwojcik/)
 * [@sfc-gh-saroskar](https://github.com/sfc-gh-saroskar/)
 * [@sfc-gh-skumbham](https://github.com/sfc-gh-skumbham/)
